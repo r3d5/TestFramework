@@ -10,6 +10,7 @@
 		B3F847932107174A00D4B21C /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F847892107174A00D4B21C /* TestFramework.framework */; };
 		B3F847982107174A00D4B21C /* TestFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F847972107174A00D4B21C /* TestFrameworkTests.swift */; };
 		B3F8479A2107174A00D4B21C /* TestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F8478C2107174A00D4B21C /* TestFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3F847A42107256A00D4B21C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F847A32107256A00D4B21C /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		B3F847922107174A00D4B21C /* TestFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F847972107174A00D4B21C /* TestFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFrameworkTests.swift; sourceTree = "<group>"; };
 		B3F847992107174A00D4B21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3F847A32107256A00D4B21C /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				B3F8478C2107174A00D4B21C /* TestFramework.h */,
 				B3F8478D2107174A00D4B21C /* Info.plist */,
+				B3F847A32107256A00D4B21C /* Test.swift */,
 			);
 			path = TestFramework;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					B3F847882107174A00D4B21C = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					B3F847912107174A00D4B21C = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F847A42107256A00D4B21C /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		B3F8479E2107174A00D4B21C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.maksymtsymbal.TestFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		B3F8479F2107174A00D4B21C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		B3F847A12107174A00D4B21C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BJ2G7JN6DS;
 				INFOPLIST_FILE = TestFrameworkTests/Info.plist;
@@ -409,6 +418,7 @@
 		B3F847A22107174A00D4B21C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BJ2G7JN6DS;
 				INFOPLIST_FILE = TestFrameworkTests/Info.plist;
